@@ -4,6 +4,9 @@
       $(".header_links").toggleClass("active");
     });
     
+    $(".filter_toggle_button").click(function () {
+      $(".events_page_box aside").toggleClass("active");
+    });
     
       $('.Banner_slider').slick({
           slidesToShow: 1,

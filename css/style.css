@@ -1,6 +1,7 @@
 @import url("https://site-assets.fontawesome.com/releases/v6.4.0/css/all.css");
 @import url("https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-solid.css");
 
+@import url('https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css');
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
@@ -893,6 +894,7 @@ border-radius: 50px;
 text-decoration: none;
 color: #000;
 text-transform: uppercase;
+margin: 0px !important;
 }
 .event_tabs li.nav-item a.active{
   background-color: var(--primary-color);
@@ -2302,6 +2304,709 @@ height: 40px;
 
 /* member search css end  */
 
+
+/* inner banner css start */
+.inner_banner_section {
+  float: left;
+display: inline-block;
+  width: 100%;
+  
+  }
+
+  .inner_banner_text_section{
+    float: left;
+    width: 100%;
+    margin-bottom: 0px;
+    position: relative;
+    height: 100%;
+    background-image: url('../images/eventbanner.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 170px 10px 50px 10px
+      }
+      .inner_banner_text_section.login_signup_bg{
+        background-image: url('../images/login.png'); 
+      }
+      .inner_banner_container{
+        max-width: 1140px;
+        margin: 0 auto; 
+      }
+      .inner_banner_slider_text {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 840px;
+      }
+      .inner_banner_slider_text h2 {
+        font-size: 64px;
+        font-weight: 400;
+        line-height: 85px;
+        letter-spacing: 0em;
+        text-align: left;      
+        color: #FFFFFF;
+        padding-bottom: 22px;
+      }
+      
+      .inner_banner_slider_text p{
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 36px;
+        letter-spacing: 0em;
+        color: #FFFFFF;
+        text-align: justify;
+      }
+    
+
+     
+     
+      @media (max-width: 1024px) {
+        .inner_banner_slider_text h2 {
+          font-size: 48px;
+          line-height: 58px;
+      
+        }
+        .inner_banner_slider_text p {
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 32px;
+        }
+        .inner_banner_slider_text {
+          max-width: 750px;
+      }
+   
+      }
+
+      @media (max-width: 768px) {
+        .inner_banner_text_section {
+    padding: 200px 10px 40px 10px;
+}
+        .inner_banner_slider_text h2 {
+          font-size: 36px;
+          line-height: 40px;
+      }
+      .inner_banner_slider_text p {
+        font-size: 16px;
+        line-height: 28px;
+    }
+  
+      }
+      
+      @media (max-width: 540px) {
+        .inner_banner_slider_text h2 {
+          font-size: 28px;
+          line-height: 33px;
+      }
+      .inner_banner_slider_text p {
+        font-size: 14px;
+        line-height: 25px;
+    }
+
+      }
+
+
+/* inner banner css start */
+
+/* event page css start */
+
+.events_page_parent {
+  float: left;
+  display: inline-block;
+  width: 100%;
+  padding: 60px 15px;
+}
+
+.events_page_box {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  gap: 30px 40px;
+  width: 100%;
+}
+
+.events_listing_main {
+  display: flex;
+  flex-direction: column;
+}
+
+.event_filter {
+  background: #FCFAF5;
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 4px;
+  align-items: center;
+  padding: 5px 10px;
+}
+
+.event_filter h2 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  padding-right: 10px;
+}
+
+.event_filter ul {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0px !important;
+}
+
+.event_filter ul li {
+  padding: 6px 10px 5px 10px;
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--primary-color);
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 5px 15px 5px 0px;
+  line-height: 24px;
+}
+
+.event_filter ul li i {
+  margin-left: 10px;
+}
+
+.events_listing {
+  margin: 0px -10px;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.event_figure_box_main {
+  flex: 0 0 50%;
+  list-style: none;
+  width: 50%;
+  padding: 10px 10px 10px 10px;
+
+}
+
+.single_event_filter {
+  margin-bottom: 15px;
+  background: transparent !important;
+  border: unset !important;
+}
+
+.res_event_filters {
+  display: none;
+  margin-bottom: 20px;
+}
+
+.res_event_filters a {
+  background-color: #EAE5DB;
+  border-radius: 4px;
+  padding: 14px 15px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 500;
+  display: flex;
+}
+
+.filter_close_btn {
+  display: none;
+  padding: 20px 15px 0px 15px;
+  justify-content: flex-end;
+}
+
+.filter_close_btn i {
+  background-color: var(--primary-color);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: #fff;
+}
+
+.event_filter_header button.accordion-button {
+  padding: 0px !important;
+  background: transparent !important;
+  border: unset !important;
+  box-shadow: unset !important;
+  color: #000 !important;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: 'Work Sans', sans-serif;
+  text-transform: capitalize;
+  margin: 0px !important;
+}
+
+.event_filter_header button.accordion-button:focus-visible {
+  outline: unset !important;
+}
+
+.event_filter_header button.accordion-button:focus {
+  outline: unset !important;
+  border: unset !important;
+  box-shadow: unset !important;
+}
+
+.event_filter_header {
+  margin-bottom: 0px !important;
+  background-color: #EAE5DB;
+  border-radius: 4px;
+  padding: 14px 15px !important;
+}
+
+.event_filter_header button.accordion-button:hover {
+  color: #000 !important;
+}
+
+.event_filter_header button.accordion-button:hover .accordion-button::after {
+  color: #000 !important;
+}
+
+.event_fields {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: auto;
+  gap: 16px 0px;
+  width: 100%;
+  grid-template-areas: ".";
+  padding: 25px 5px 20px 5px;
+}
+
+.event_checkbox_field {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.event_checkbox_input {
+  width: 21px;
+  height: 21px;
+  position: relative;
+  display: inline-block;
+  margin: 0px;
+  min-width: 21px;
+}
+
+.event_checkbox_input input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.event_checkbox_input .checked_input_style {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccd6eb;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.12);
+  border-radius: 2px;
+}
+
+.event_checkbox_input .checked_input_style i {
+  color: #ccd6eb;
+  font-size: 14px;
+}
+
+.event_checkbox_input input:checked+.checked_input_style {
+  background: var(--primary-color);
+}
+
+.event_checkbox_input input:not(:checked)+.checked_input_style {
+  background-color: #ccd6eb;
+}
+
+.event_checkbox_input input:checked+.checked_input_style i {
+  color: #ffffff;
+}
+
+.event_checkbox_field p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 16px;
+  color: rgba(0, 0, 0, 0.7);
+  padding-left: 10px;
+  margin: 0px;
+}
+
+@media(max-width:1024px) {
+  .events_page_box {
+    grid-template-columns: 1fr 300px;
+  }
+
+  .events_page_parent {
+    padding: 40px 15px;
+  }
+}
+
+@media(max-width:768px) {
+  .events_page_parent {
+    padding: 30px 15px;
+  }
+
+  .event_filter_section {
+    padding: 60px 10px 10px 10px;
+  }
+
+  .events_page_box {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 0px;
+  }
+
+  .res_event_filters {
+    display: flex;
+  }
+
+  .events_page_box aside {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    width: 320px;
+    height: 100vh;
+    overflow: auto;
+    background: #FCFAF5;
+    z-index: 99;
+    transform: translatex(100%);
+    transition: 0.3s ease-in-out;
+  }
+
+  .events_page_box aside.active {
+    transform: translatex(0%);
+    transition: 0.3s ease-in-out;
+  }
+
+  .filter_close_btn {
+    display: flex;
+  }
+
+}
+
+@media(max-width:540px) {
+  .event_filter_box {
+    grid-template-columns: 1fr;
+  }
+
+}
+/* event page css end */
+
+
+/* login,register and member page css start */
+
+.login_section {
+  display: inline-block;
+  width: 100%;
+  padding: 60px 15px 30px 15px;
+}
+
+.login_section_parent {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px 90px;
+  align-items: center;
+}
+
+.login_section_parent figure {
+  margin: 0px;
+}
+
+.login_section_parent figure img {
+  width: 100%;
+}
+
+.login_section_box {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: auto;
+  width: 100%;
+  align-items: center;
+  background: #FCFAF5;
+  box-shadow: 0px 34px 44px -20px #b9ceea40;
+  border-radius: 10px;
+  padding: 48px 48px;
+}
+
+.login_section_box_heading {
+  display: grid;
+  width: 100%;
+  padding-bottom: 24px;
+}
+
+.login_section_box_heading h3 {
+  font-size: 24px;
+    font-weight: 700;
+    line-height: 34px;
+    letter-spacing: 0em;
+    color: #000000;
+   padding-bottom: 15px;
+  }
+  .login_section_box_heading h4 {
+  font-size: 24px;
+    font-weight: 700;
+    line-height: 34px;
+    letter-spacing: 0em;
+    color: #000000;
+  }
+
+.login_section_box_heading p {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0em;
+  color: #515151;
+}
+
+
+.login_tabs_main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+  flex-direction: column;
+  width: 100%;
+}
+.login_tabs{
+  background: #EAE5DB;
+  border-radius: 8px;
+  display: grid !important;
+  align-items: center;
+  margin-bottom: 20px !important;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+}
+.login_tabs a {
+  padding: 8px 0px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 29px;
+  text-align: center;
+  color: #000;
+  text-decoration: unset;
+  cursor: pointer;
+}
+.login_tabs a:hover{
+  text-decoration: none;
+  color: inherit;
+
+}
+.login_tabs a.active{
+  background: var(--primary-color);
+    color: #fff !important;
+    text-decoration: unset;
+    font-weight: 600;
+    border-radius: 8px;
+}
+.login_tab_content {
+  display: flex;
+  width: 100%;
+}
+.login_tab_data {
+  display: flex;
+  width: 100%;
+}
+.login_tab_data form {
+    width: 100%;
+}
+.login_form_content_box {
+    width: 100%;
+    display: grid;
+    gap: 22px 0px;
+}
+.login_form_field_box {
+    display: grid;
+    position: relative;
+}
+.login_single_field_box {
+    display: grid;
+    width: 100%;
+    position: relative;
+    height: 60px;
+    background-color: #EAE5DB;
+    border: none;
+    border-radius: 6px;
+}
+.login_single_field_box span {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    color: #000;
+    position: absolute;
+    top: 10px;
+    left: 16px;
+}
+.login_single_field_box input {
+    height: 100%;
+    padding: 32px 38px 14px 16px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    color:#000;
+    width: 100%;
+    background-color: unset;
+    border: unset;
+}
+.login_single_field_box select {
+    height: 100%;
+    padding: 32px 38px 14px 16px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    color:#000;
+    width: 100%;
+    background-color: unset;
+    border: unset;
+}
+.login_single_field_box i {
+    position: absolute;
+    bottom: 19px;
+    align-items: center;
+    right: 16px;
+    color: #000;
+    cursor: pointer;
+}
+.login_form_signin_btn button {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 17px;
+    text-transform: capitalize;
+    color: #fff;
+    background: var(--primary-color);
+    border-radius: 4px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border: unset;
+}
+.forget_password_container {
+    max-width: 560px !important;
+    margin: 20px auto !important;
+    padding: 0px 20px !important;
+}
+.forget_password_popup {
+    background: #FCFAF5;
+    border-radius: 4px;
+    padding: 32px 15px 38px 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    pointer-events: auto;
+}
+.forget_password_popup_des {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 25px;
+    flex-direction: column;
+    text-align: center;
+}
+.forget_password_popup_des h5 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 25px;
+    color: #000;
+    margin: 0px;
+}
+
+.forget_password_popup form {
+    width: 100%;
+}
+.forget_password_popup_btn {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    width: 100%;
+}
+.forget_password_popup_btn a {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: capitalize;
+    color: #fff !important;
+    background: var(--primary-color);
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 44px;
+    cursor: pointer;
+}
+.forget_password_btn a{
+  font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 17px;
+    text-align: center;
+    color: #000 !important;
+    cursor: pointer;
+    text-decoration: underline !important;
+}
+
+@media (max-width: 1024px) {
+  .login_section_parent {
+    gap: 30px 50px;
+  }
+  .login_section {
+    padding: 40px 15px 30px 15px;
+  }
+  .login_section_box {
+    padding: 30px 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .login_section {
+    padding: 0px 0px 30px 0px;
+  }
+  .login_section_box {
+    padding: 30px 15px;
+}
+  .login_section_parent {
+    gap: 0px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .login_section_parent figure {
+    max-width: 400px;
+    margin-top: 60px;
+  }
+}
+
+@media (max-width: 540px) {
+}
+
+/* login,register and member page css end */
 
 /* newsletter css start */
 
