@@ -55,7 +55,8 @@ h5,
 h6,
 p,
 ul {
-  margin: 0px ;
+  margin: 0px;
+  padding: 0px;
 }
 
 .custom_container {
@@ -2527,7 +2528,6 @@ display: inline-block;
 }
 
 .event_filter_header button.accordion-button {
-  padding: 0px !important;
   background: transparent !important;
   border: unset !important;
   box-shadow: unset !important;
@@ -2537,6 +2537,7 @@ display: inline-block;
   font-family: 'Work Sans', sans-serif;
   text-transform: capitalize;
   margin: 0px !important;
+  padding: 14px 15px !important;
 }
 
 .event_filter_header button.accordion-button:focus-visible {
@@ -2553,7 +2554,7 @@ display: inline-block;
   margin-bottom: 0px !important;
   background-color: #EAE5DB;
   border-radius: 4px;
-  padding: 14px 15px !important;
+ 
 }
 
 .event_filter_header button.accordion-button:hover {
