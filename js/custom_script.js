@@ -116,6 +116,56 @@
           ],
         });
 
+        $(".related_event_slider").slick({
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 4000,
+          dots: false,
+          arrows: false,
+          appendArrows: $('.brand_slider_arrow_box'),
+          nextArrow: '<a class="slider_arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></a>',
+          prevArrow: '<a class="slider_arrow"><i class="fa fa-angle-left" aria-hidden="true"></i></a>',
+          responsive: [
+  
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 4000,
+                dots: false,
+                arrows: false,
+              },
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 4000,
+                dots: false,
+                arrows: false,
+              },
+            },
+            {
+              breakpoint: 540,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 4000,
+                dots: false,
+                arrows: false,
+              },
+            },
+  
+          ],
+        });
+
+
         $(".blog_slider").slick({
           slidesToShow:3,
           slidesToScroll: 1,
